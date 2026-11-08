@@ -13,6 +13,8 @@ Issues and attachments are public. Review screenshots and diagnostic logs and re
 
 ## Contact
 
+Join the [Tenter Discord community](https://discord.gg/SdVeMghYvH) to exchange workflows and experiences. Track bug reports and feature requests in this repository.
+
 For partnership inquiries, email [tenter.build@gmail.com](mailto:tenter.build@gmail.com). Follow [@tenterbuild on X](https://x.com/tenterbuild) for product news.
 
 ## Maintaining feedback

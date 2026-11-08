@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Join Tenter on Discord
+    url: https://discord.gg/SdVeMghYvH
+    about: Meet other Tenter users and discuss development workflows.
   - name: Partnership inquiries
     url: mailto:tenter.build@gmail.com?subject=Tenter%20Partnership%20Inquiry
     about: Contact Tenter about a partnership.
