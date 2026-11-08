@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement to Tenter.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue and its attachments will be public. Remove sensitive information before submitting.
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What are you trying to accomplish?
+      description: Describe your workflow and the difficulty you are facing.
+    validations:
+      required: true
+  - type: textarea
+    id: desired_result
+    attributes:
+      label: What would you like to be able to do?
+      description: Describe the result you want to achieve.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or examples
+      description: Attach any examples that help explain your suggestion, after removing sensitive information.
+    validations:
+      required: false
