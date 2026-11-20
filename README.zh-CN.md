@@ -12,12 +12,11 @@
 
 <p align="center">
   <strong>让产品持续向前。开发与维护，尽在掌握。</strong><br>
-  为全栈工程师和超级个体设计的 AI 工作台，一台 Mac 同时推进多个产品。
+  跨三个仓库的需求，同时做几个也不乱。
 </p>
 
 <p align="center">
   <a href="https://github.com/justinchen13/Tenter-Releases/releases/latest"><img alt="最新版本" src="https://img.shields.io/github/v/release/justinchen13/Tenter-Releases?sort=semver&label=release&color=FF5533"></a>
-  <img alt="macOS 12+，Apple Silicon" src="https://img.shields.io/badge/macOS%2012%2B-Apple%20Silicon-111111?logo=apple&logoColor=white">
   <a href="https://discord.gg/SdVeMghYvH"><img alt="Discord" src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white"></a>
   <a href="https://x.com/tenterbuild"><img alt="X" src="https://img.shields.io/badge/@tenterbuild-follow-111111?logo=x&logoColor=white"></a>
 </p>
@@ -33,38 +32,36 @@
   <img src=".github/assets/workbench-zh-CN.webp" alt="Tenter 工作台：左侧是项目组，中间是 Agent 会话，右侧是每个仓库的分支与 PR 状态" width="900">
 </p>
 
-本仓库发布 Tenter 官方 macOS 安装包，并收集公开的问题反馈与功能建议。Tenter 的源代码不在这里公开。
-
 ## Tenter 是什么？
 
-Tenter 是一个 macOS 应用，在一个地方组织产品的仓库、资料和 AI 工作，让一个人也能像整个团队一样，同时推进多个产品。使用你自己的 Claude 或 Codex 账号，Tenter 让它们并行工作。
+Tenter 把一个产品的仓库和资料组织在一起。即使多个需求涉及同一组仓库，你也可以同时推进，按需求分别审阅和交付。
 
-### 并行工作，工作区互相隔离
+### 每个需求有自己的工作区
 
-每个任务都有独立的 worktree 和会话，Claude 与 Codex 可以同时工作、互不干扰。一个工作区可以覆盖一项改动涉及的所有仓库。
+一个工作区纳入该需求涉及的仓库和资料。各仓库有独立的 Git worktree 和分支，一个 Agent 会话可以跨仓库工作。每个仓库可设为可写、引用（只读）或禁用，由系统沙箱执行。
 
-### 中控
+### 按需求审阅和交付
 
-目标只需描述一次。中控会拆分和派发工作、跟进每个会话，只把需要你拍板的事情带回来。
+在一个工作区审阅该需求涉及的所有仓库改动。用 `/pr` 为每个有改动的仓库创建或更新 PR，支持 GitHub、GitLab 和 Gitea。合并使用 `/merge` 或你开启的自动化。
+
+<p align="center">
+  <img src=".github/assets/delivery-zh-CN.webp" alt="Git 面板显示工作区内每个仓库的分支与 Pull Request" width="820">
+</p>
+
+### 在中控跟进多个工作区
+
+用[中控](https://tenter.build/zh-CN/docs/guides/control-center)在一个对话里看各工作区的进展和阻塞。启用接管后，中控可以在你授予的权限内处理常规问题和审批，把需要你拍板的事项带回来。
 
 <p align="center">
   <img src=".github/assets/coordination-zh-CN.webp" alt="中控汇总来自多个产品会话的进展" width="820">
 </p>
 
-### 上下文持续积累
+### 把项目上下文留给下一个需求
 
-内置的项目管理、记忆、Skills 和资产在工作区之间共享。任务和缺陷关联到正在处理它们的工作区，每个新任务都能接着上一次继续。
+在[项目管理](https://tenter.build/zh-CN/docs/guides/project-management)里，任务和缺陷关联到实际处理它们的工作区。服务器、域名和设备各有自己的[资产记忆](https://tenter.build/zh-CN/docs/reference/assets)，Agent 下次使用时可以查阅已有的操作约定。
 
 <p align="center">
   <img src=".github/assets/planning-zh-CN.webp" alt="项目管理看板，打开的任务关联着对应的工作区" width="820">
-</p>
-
-### 从计划到 PR
-
-执行前先审阅计划，完成后在同一流程里审阅改动、提交并创建 Pull Request，每个仓库一个分支、一个 PR。
-
-<p align="center">
-  <img src=".github/assets/delivery-zh-CN.webp" alt="Git 面板显示工作区内每个仓库的分支与 Pull Request" width="820">
 </p>
 
 ## 下载
@@ -101,15 +98,11 @@ Tenter 会自动更新。打开 **设置 → 关于 → 检查更新**，更新�
 > [!IMPORTANT]
 > Issue 及其附件会公开可见。分享截图和诊断日志前，请先检查并删除敏感信息。
 
-收到功能建议不代表已排入开发计划。
-
 ## 社区与联系
 
 - **Discord**：加入 [Tenter 社区](https://discord.gg/SdVeMghYvH)，交流工作流和使用经验。
 - **X**：关注 [@tenterbuild](https://x.com/tenterbuild) 获取产品动态。
 - **商务合作**：发送邮件至 [tenter.build@gmail.com](mailto:tenter.build@gmail.com)。
-
-问题反馈和功能建议统一在本仓库跟踪。
 
 ## 维护反馈模板
 
