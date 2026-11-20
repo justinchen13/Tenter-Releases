@@ -12,12 +12,11 @@
 
 <p align="center">
   <strong>Keep your product moving. Build. Maintain. Stay in control.</strong><br>
-  An AI workbench for full-stack engineers and solo builders, on one Mac.
+  Work on several cross-repo changes at once, each in its own workspace.
 </p>
 
 <p align="center">
   <a href="https://github.com/justinchen13/Tenter-Releases/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/justinchen13/Tenter-Releases?sort=semver&label=release&color=FF5533"></a>
-  <img alt="macOS 12+ on Apple Silicon" src="https://img.shields.io/badge/macOS%2012%2B-Apple%20Silicon-111111?logo=apple&logoColor=white">
   <a href="https://discord.gg/SdVeMghYvH"><img alt="Discord" src="https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white"></a>
   <a href="https://x.com/tenterbuild"><img alt="X" src="https://img.shields.io/badge/@tenterbuild-follow-111111?logo=x&logoColor=white"></a>
 </p>
@@ -33,38 +32,36 @@
   <img src=".github/assets/workbench.webp" alt="Tenter workbench: project groups on the left, an agent session in the middle, and every repository's branch and PR status on the right" width="900">
 </p>
 
-This repository hosts Tenter's official macOS releases and public bug reports and feature requests. Tenter's source code is not published here.
-
 ## What is Tenter?
 
-Tenter is a macOS app that organizes your repositories, materials and AI work in one place, so one person can work like a whole team and ship several products at once. Bring your own Claude or Codex account; Tenter runs them side by side.
+Tenter brings your product's repositories and shared materials together. You can work on several changes across the same repositories at once, then review and deliver each change separately.
 
-### Parallel work, isolated workspaces
+### A workspace for each change
 
-Each task gets its own worktree and sessions, so Claude and Codex agents work side by side without stepping on each other. One workspace can span every repository a change touches.
+Open a workspace with the repositories and materials a change needs. Each repository has its own Git worktree and branch, and one agent session can work across them. Set access per repository to Writable, Reference (read-only), or Disabled. The system sandbox enforces those settings.
 
-### Control Center
+### Review and deliver each change
 
-Describe the goal once. The Control Center splits and dispatches the work, follows every conversation, and brings back only the decisions that need you.
+Review all repository diffs for a change in one workspace. Use `/pr` to open or update a PR for each changed repository on GitHub, GitLab, or Gitea. Merge with `/merge` or automation you enable.
+
+<p align="center">
+  <img src=".github/assets/delivery.webp" alt="Git panel showing a branch and pull request for each repository in the workspace" width="820">
+</p>
+
+### Follow progress across workspaces
+
+The [Control Center](https://tenter.build/en/docs/guides/control-center) brings progress and blockers into one conversation. With takeover enabled, it can handle routine questions and approvals within the permissions you grant and bring back decisions that need your input.
 
 <p align="center">
   <img src=".github/assets/coordination.webp" alt="Control Center following updates from conversations across several products" width="820">
 </p>
 
-### Context that compounds
+### Keep project context for the next change
 
-Built-in project management, memory, Skills and assets are shared across workspaces. Tasks and bugs link to the workspaces doing the work, so every task starts where the last one left off.
+In [project management](https://tenter.build/en/docs/guides/project-management), tasks and bugs link to the workspaces where the work happens. Servers, domains, and devices keep their own [asset memory](https://tenter.build/en/docs/reference/assets), so agents can consult existing operating notes the next time they use them.
 
 <p align="center">
   <img src=".github/assets/planning.webp" alt="Project management board with a task opened and linked to its workspace" width="820">
-</p>
-
-### From plan to pull request
-
-Review the plan before it runs, then review the changes, commit and open a pull request in one flow, with one branch and one PR per repository.
-
-<p align="center">
-  <img src=".github/assets/delivery.webp" alt="Git panel showing a branch and pull request for each repository in the workspace" width="820">
 </p>
 
 ## Download
@@ -101,15 +98,11 @@ Before reporting, check the [troubleshooting guide](https://tenter.build/en/docs
 > [!IMPORTANT]
 > Issues and attachments are public. Review screenshots and diagnostic logs and remove sensitive information before sharing them.
 
-Receiving a feature request does not mean that it has been scheduled for implementation.
-
 ## Community and contact
 
 - **Discord**: join the [Tenter community](https://discord.gg/SdVeMghYvH) to exchange workflows and experiences.
 - **X**: follow [@tenterbuild](https://x.com/tenterbuild) for product news.
 - **Partnerships**: email [tenter.build@gmail.com](mailto:tenter.build@gmail.com).
-
-Track bug reports and feature requests in this repository.
 
 ## Maintaining feedback
 
